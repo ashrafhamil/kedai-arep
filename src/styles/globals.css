@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  color: white;
+}
+
+.custom-button {
+  background-color: rgb(100, 48, 163, 0.8);
+  color: white;
+}
+
+.custom-button:hover {
+  background: url('https://cdna.artstation.com/p/assets/images/images/040/451/034/large/darktouch-enigma-final.jpg?1628877614') no-repeat center center;
+  background-size: cover;
+  color: transparent; /* Hide the button text */
+}
+
+
+/* Define the keyframes for the glowing effect */
+@keyframes glowingText {
+  0% {
+    text-shadow: 0 0 5px rgba(187, 0, 255, 0.5), 0 0 10px rgba(187, 0, 255, 0.3);
+    opacity: 0.5;
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(100, 0, 139, 0.8), 0 0 30px rgba(100, 0, 139, 0.6);
+    opacity: 1;
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(187, 0, 255, 0.5), 0 0 10px rgba(187, 0, 25, 0.3);
+    opacity: 0.5;
+  }
+}
+
+/* Apply the animation */
+.glowing-text {
+  display: inline-block;
+  animation: glowingText 2s infinite;
+}
