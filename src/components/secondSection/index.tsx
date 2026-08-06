@@ -19,8 +19,8 @@ const SecondSection = () => {
                     isZoomed
                     width="100%"
                     height="100%"
-                    alt="NextUI hero Image"
-                    src="https://cdn0.gamesports.net/content_teasers/81000/81135.jpg?1555044780"
+                    alt="Enigma"
+                    src="/enigma.jpg"
                 />
             </div>
         </div>
