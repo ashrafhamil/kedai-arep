@@ -9,20 +9,20 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className='pb-32'>
+      <div id='home' className='pb-32'>
         <FirstSection />
       </div>
       <div className='px-4'>
-        <div className=''>
+        <div id='about' className='scroll-mt-8'>
           <SecondSection />
         </div>
 
-        <div>
+        <div id='services' className='scroll-mt-8'>
           <ThirdSection />
         </div>
       </div>
 
-      <div>
+      <div id='contact' className='scroll-mt-8'>
         <ForthSection />
       </div>
 

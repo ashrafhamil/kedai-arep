@@ -17,10 +17,10 @@ const Header = () => {
         <h1 className="text-2xl font-bold">Arep&apos;s Holding</h1>
         <nav className="hidden md:flex">
           <ul className="flex space-x-4">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">About</a></li>
-            <li><a href="#" className="hover:underline">Services</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+            <li><a href="#home" className="hover:underline">Home</a></li>
+            <li><a href="#about" className="hover:underline">About</a></li>
+            <li><a href="#services" className="hover:underline">Services</a></li>
+            <li><a href="#contact" className="hover:underline">Contact</a></li>
           </ul>
         </nav>
         <button
@@ -43,10 +43,10 @@ const Header = () => {
         </button>
         <nav className="mt-16">
           <ul className="flex flex-col space-y-4 p-4">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">About</a></li>
-            <li><a href="#" className="hover:underline">Services</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+            <li><a href="#home" onClick={toggleMenu} className="hover:underline">Home</a></li>
+            <li><a href="#about" onClick={toggleMenu} className="hover:underline">About</a></li>
+            <li><a href="#services" onClick={toggleMenu} className="hover:underline">Services</a></li>
+            <li><a href="#contact" onClick={toggleMenu} className="hover:underline">Contact</a></li>
           </ul>
         </nav>
       </div>
