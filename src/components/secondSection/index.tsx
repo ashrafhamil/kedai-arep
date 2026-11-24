@@ -11,7 +11,7 @@ const SecondSection = () => {
                 </p>
                 <br />
                 <p>
-                    As the famous American author, salesman and motivational speaker Zig Ziglar once said: “Ha ha hu ha hu&quot;. Success is the doing, not the getting; in the trying, not the triumph. Success is a personal standard, reaching for the highest that is in us, becoming all that we can be. If we do our best, we are a success.
+                    As Arep himself once said: “Ha ha hu ha hu.” “Cepatlah aku nak kena duel dah ni.” “Dah janji dah, sharp pukul 11 aku tenong.” “Cepat, masa saya tak lama.” “Mari... sebelum saya kena duel.” Success is the doing, not the getting; in the trying, not the triumph. Success is a personal standard, reaching for the highest that is in us, becoming all that we can be. If we do our best, we are a success.
                 </p>
             </div>
             <div className="md:basis-1/2 text-center flex items-center">
