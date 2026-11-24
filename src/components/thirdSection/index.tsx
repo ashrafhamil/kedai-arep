@@ -52,7 +52,7 @@ const ThirdSection = () => {
               <span className="text-5xl font-bold tracking-tight text-gray-900">RM311</span>
               <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600"></span>
             </p>
-            <a href="#" className="mt-10 block w-full rounded-md bg-indigo-800 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-950">Book Now</a>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" className="mt-10 block w-full rounded-md bg-indigo-800 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-950">Book Now</a>
             <p className="mt-6 text-xs leading-5 text-gray-600">Belum kena belum tau. Suda kena hari hari mau.</p>
           </div>
         </div>

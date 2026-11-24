@@ -1,10 +1,18 @@
+"use client";
+
 import React from "react";
 
 const ForthSection = () => {
     return (
         <div className="max-w-lg mx-auto p-4 text-black">
             <h2 className="text-2xl font-bold mb-4">Book Your Consultation Date</h2>
-            <form className="bg-white shadow-md rounded-lg p-6">
+            <form
+                className="bg-white shadow-md rounded-lg p-6"
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran";
+                }}
+            >
                 <div className="mb-4">
                     <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
                         Name
