@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='contact' className='scroll-mt-8'>
+      <div id='contact' className='scroll-mt-8 pb-24'>
         <ForthSection />
       </div>
 
