@@ -13,16 +13,16 @@ export default function Home() {
         <FirstSection />
       </div>
       <div className='px-4'>
-        <div id='about' className='scroll-mt-8'>
+        <div id='about' className='scroll-mt-20'>
           <SecondSection />
         </div>
 
-        <div id='services' className='scroll-mt-8'>
+        <div id='services' className='scroll-mt-20'>
           <ThirdSection />
         </div>
       </div>
 
-      <div id='contact' className='scroll-mt-8 pb-24'>
+      <div id='contact' className='scroll-mt-20 pb-24'>
         <ForthSection />
       </div>
 

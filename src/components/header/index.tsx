@@ -1,5 +1,5 @@
 // components/Header.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Inter } from 'next/font/google';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
@@ -9,10 +9,26 @@ const inter = Inter({ subsets: ['latin'] });
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [overHero, setOverHero] = useState(true);
+
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // The hero is a full-screen black section; past it the page is white, so the clear header needs dark text.
+  useEffect(() => {
+    const update = () => setOverHero(window.scrollY < window.innerHeight - 64);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => {
+      window.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+    };
+  }, []);
+
   return (
-    <header className={`w-full p-4 bg-gradient-to-r from-violet-800 to-indigo-950 text-white ${inter.className}`}>
+    <header className={`fixed top-0 z-40 w-full p-4 transition-colors duration-300 ${overHero ? 'text-white' : 'text-gray-900'} ${inter.className}`}>
+      {/* Glass layer is a sibling of the drawer: backdrop-filter on an ancestor would trap the fixed drawer. */}
+      <div className={`absolute inset-0 -z-10 backdrop-blur-md border-b transition-colors duration-300 ${overHero ? 'bg-white/5 border-white/10' : 'bg-white/60 border-black/5'}`} />
       <div className="container mx-auto flex items-center justify-between">
         <h1 className="text-2xl font-bold">Arep&apos;s Holding</h1>
         <nav className="hidden md:flex">
